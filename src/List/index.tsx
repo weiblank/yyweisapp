@@ -1,9 +1,12 @@
-import React from "react";
-import {List} from 'antd'
-interface TableProps {
-  [props: string]: any
-}
-const YList = (props: TableProps) => {
-  return <List {...props} />
-}
-export default YList
+import InternalList from './List';
+import Item from './Item';
+
+type FormItemType = {
+  Item: typeof Item;
+  [props: string]: any;
+};
+
+const List = InternalList as unknown as FormItemType;
+
+List.Item = Item;
+export default List;

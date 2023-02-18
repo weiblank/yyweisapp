@@ -1,33 +1,19 @@
-# myapp
+## 快速开始
 
-## Getting Started
-
-Install dependencies,
+下载
 
 ```bash
-$ npm i
+$ npm i yyweisapp
 ```
 
-Start the dev server,
+如何使用
 
 ```bash
-$ npm start
+$ import {Button} from 'yyweisapp'
 ```
 
-Build documentation,
+官网
 
 ```bash
-$ npm run docs:build
-```
-
-Run test,
-
-```bash
-$ npm test
-```
-
-Build library via `father`,
-
-```bash
-$ npm run build
+$ http://1.117.138.66:100
 ```
