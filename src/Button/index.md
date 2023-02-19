@@ -3,6 +3,9 @@
 Demo:
 
 ```tsx
+/**
+ * desc: 按钮示例
+ */
 import React from 'react';
 
 import Button from './index';

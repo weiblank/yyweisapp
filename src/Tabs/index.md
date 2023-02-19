@@ -3,7 +3,7 @@
 ```tsx
 import React from 'react';
 import Tabs from './index';
-
+import { AndroidOutlined, AppleOutlined } from '@ant-design/icons';
 const onChange = (key: string) => {
   console.log(key);
 };
@@ -26,7 +26,31 @@ const items = [
   },
 ];
 
-const App: React.FC = () => <Tabs defaultActiveKey="1" items={items} onChange={onChange} />;
+const App: React.FC = () => {
+  return (
+    <div>
+      <Tabs defaultActiveKey="1" items={items} />
+      有图标的标签
+      <Tabs
+        defaultActiveKey="1"
+        items={[AppleOutlined, AndroidOutlined].map((Icon, i) => {
+          const id = String(i + 1);
+
+          return {
+            label: (
+              <span>
+                <Icon />
+                Tab {id}
+              </span>
+            ),
+            key: id,
+            children: `Tab ${id}`,
+          };
+        })}
+      />
+    </div>
+  );
+};
 
 export default App;
 ```
