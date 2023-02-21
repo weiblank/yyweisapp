@@ -1,9 +1,15 @@
 import React from 'react';
+
 import { List } from 'antd';
-interface TableProps {
-  [props: string]: any;
+
+interface Prop {
+  children?: React.ReactNode;
+  [propsName: string]: any;
 }
-const YList = (props: TableProps) => {
-  return <List {...props} />;
+
+const YList: any = (props: Prop) => {
+  const { children, ...others } = props;
+  return <List {...others}>{children}</List>;
 };
+
 export default YList;

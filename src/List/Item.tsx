@@ -1,10 +1,19 @@
-import React, { ReactNode } from 'react';
+/*
+ * @Author: weiyayun
+ * @Date: 2022-11-22 18:50:49
+ * @Interface:
+ * @Description:
+ */
+import React from 'react';
 import { List } from 'antd';
-export interface ItemProps {
-  children: any;
-  [props: string]: any;
+
+interface Prop {
+  children?: React.ReactNode;
 }
-const YListItem = ({ children, ...props }: ItemProps) => {
-  return <List.Item {...props}>{children}</List.Item>;
+
+const ListItem = (props: Prop) => {
+  const { children, ...others } = props;
+  return <List.Item {...others}>{children}</List.Item>;
 };
-export default YListItem;
+
+export default ListItem;
