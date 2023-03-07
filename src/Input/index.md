@@ -6,7 +6,7 @@
  * desc: 基本使用
  */
 import React from 'react';
-import Input from './index';
+import { Input } from 'yyweisapp';
 
 const App: React.FC = () => {
   return (

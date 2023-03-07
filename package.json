@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "yyweisapp",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -33,7 +33,9 @@
     "@ant-design/icons": "^5.0.1",
     "antd": "^5.2.1",
     "react": "^18.0.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.5",
+    "yyweisapp": "^1.0.4"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",

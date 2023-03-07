@@ -7,8 +7,7 @@ Demo:
  * desc: 按钮示例
  */
 import React from 'react';
-
-import Button from './index';
+import { Button } from 'yyweisapp';
 export default () => {
   return (
     <div style={{ display: 'flex', gap: 10 }}>

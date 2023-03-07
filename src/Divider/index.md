@@ -2,7 +2,7 @@
 
 ```tsx
 import React from 'react';
-import Divider from './index';
+import { Divider } from 'yyweisapp';
 
 export default () => {
   return (

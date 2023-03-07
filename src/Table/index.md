@@ -2,8 +2,8 @@
 
 ```tsx
 import React from 'react';
+import { Table } from 'yyweisapp';
 
-import Table from './index';
 export default () => {
   const dataSource = [
     {

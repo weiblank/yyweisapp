@@ -2,7 +2,7 @@
 
 ```tsx
 import React from 'react';
-import Page from './index';
+import { Page } from 'yyweisapp';
 
 const App: React.FC = () => {
   return (

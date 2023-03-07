@@ -2,7 +2,7 @@
 
 ```tsx
 import React from 'react';
-import { Tree } from 'antd';
+import { Tree } from 'yyweisapp';
 
 const App: React.FC = () => {
   const treeData = [

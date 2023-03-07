@@ -2,7 +2,7 @@
 
 ```tsx
 import React from 'react';
-import Tabs from './index';
+import { Tabs } from 'yyweisapp';
 import { AndroidOutlined, AppleOutlined } from '@ant-design/icons';
 const onChange = (key: string) => {
   console.log(key);

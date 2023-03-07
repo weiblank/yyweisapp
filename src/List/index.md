@@ -9,8 +9,9 @@
 
 ```tsx
 import React, { useEffect, useState } from 'react';
+import { List } from 'yyweisapp';
+
 import { Typography } from 'antd';
-import List from './index';
 
 const App: React.FC = () => {
   const data = [

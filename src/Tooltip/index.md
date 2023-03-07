@@ -2,7 +2,8 @@
 
 ```tsx
 import React from 'react';
-import Tooltip from './index';
+
+import { Tooltip } from 'yyweisapp';
 
 const App: React.FC = () => (
   <Tooltip title="prompt text">

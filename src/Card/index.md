@@ -6,7 +6,7 @@
  * desc: 不同类型的卡片
  */
 import React from 'react';
-import Card from './index';
+import { Card } from 'yyweisapp';
 
 const App: React.FC = () => {
   return (

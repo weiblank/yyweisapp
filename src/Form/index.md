@@ -2,9 +2,7 @@
 
 ```tsx
 import React, { useForm } from 'react';
-import { Button } from 'antd';
-import Input from '../Input/index';
-import Form from './index';
+import { Button, Form, Input } from 'yyweisapp';
 
 const App: React.FC = () => (
   <Form
