@@ -1,14 +1,30 @@
 # Form
 
 ```tsx
-import React from 'react';
+import React, { useForm } from 'react';
+import { Button } from 'antd';
 import Input from '../Input/index';
 import Form from './index';
 
 const App: React.FC = () => (
-  <Form>
+  <Form
+    onFinish={(values: any) => {
+      console.log(values);
+    }}
+  >
     <Form.Item name="name" label="姓名">
       <Input />
+    </Form.Item>
+    <Form.Item name="age" label="年龄">
+      <Input />
+    </Form.Item>
+    <Form.Item name="sex" label="性别">
+      <Input />
+    </Form.Item>
+    <Form.Item>
+      <Button type="primary" htmlType="submit">
+        提交
+      </Button>
     </Form.Item>
   </Form>
 );

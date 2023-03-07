@@ -1,11 +1,4 @@
-<!--
- * @Author: weiyayun
- * @Date: 2023-02-21 19:37:42
- * @Interface:
- * @Description:
--->
-
-# page
+# Page
 
 ```tsx
 import React from 'react';

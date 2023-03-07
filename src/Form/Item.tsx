@@ -1,12 +1,10 @@
-import React, { ReactNode } from "react";
-import {Form} from 'antd'
+import React, { ReactNode } from 'react';
+import { Form } from 'antd';
 export interface ItemProps {
-  children: any,
-  [props: string]: any
+  children: any;
+  [props: string]: any;
 }
-const YFormItem = ({children, ...props}: ItemProps) => {
-  return <Form.Item {...props}>
-    {children}
-  </Form.Item>
-}
-export default YFormItem
+const YFormItem: any = ({ children, ...props }: ItemProps) => {
+  return <Form.Item {...props}>{children}</Form.Item>;
+};
+export default YFormItem;
