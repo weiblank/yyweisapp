@@ -11,3 +11,4 @@ export { default as Divider } from './Divider';
 export { default as DatePicker } from './DatePicker';
 export { default as Page } from './Page';
 export { default as Modal } from './Modal';
+export { default as Cascader } from './Cascader';

@@ -1,7 +1,5 @@
 ## Button
 
-Demo:
-
 ```tsx
 /**
  * desc: 按钮示例
