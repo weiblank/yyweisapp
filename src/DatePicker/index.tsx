@@ -1,9 +1,11 @@
 import React from 'react';
 import { DatePicker } from 'antd';
 
-interface DatePickerProps {
+type DatePickerType = {
   [props: string]: any;
-}
-export default (props: DatePickerProps) => {
+};
+const YDatePicker: React.FC<DatePickerType> = (props) => {
   return <DatePicker {...props} />;
 };
+
+export default YDatePicker;

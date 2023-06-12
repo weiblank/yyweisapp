@@ -1,9 +1,12 @@
-import React from "react";
-import {Card} from 'antd'
-interface TableProps {
-  [props: string]: any
-}
-const YCard = (props: TableProps) => {
-  return <Card {...props} />
-}
-export default YCard
+import React from 'react';
+import { Card } from 'antd';
+
+type CardType = {
+  [props: string]: any;
+};
+
+const YCard: React.FC<CardType> = (props) => {
+  return <Card {...props} />;
+};
+
+export default YCard;

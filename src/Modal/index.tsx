@@ -1,13 +1,20 @@
+/*
+ * @Author: weiyayun
+ * @Date: 2023-02-21 18:49:10
+ * @Interface:
+ * @Description:
+ */
 import React, { useState, useRef } from 'react';
 import { Modal } from 'antd';
 import type { DraggableData, DraggableEvent } from 'react-draggable';
 import Draggable from 'react-draggable';
-interface modalProps {
+
+type modalProps = {
   children: React.ReactNode;
   draggable?: Boolean;
   [props: string]: any;
-}
-export default ({ children, draggable, ...others }: modalProps) => {
+};
+const YModal: React.FC<modalProps> = ({ children, draggable, ...others }) => {
   const [open, setOpen] = useState(false);
   const [disabled, setDisabled] = useState(false);
   const [bounds, setBounds] = useState({ left: 0, top: 0, bottom: 0, right: 0 });
@@ -48,3 +55,4 @@ export default ({ children, draggable, ...others }: modalProps) => {
     </Modal>
   );
 };
+export default YModal;

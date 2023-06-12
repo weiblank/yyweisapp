@@ -7,11 +7,11 @@
 import React from 'react';
 import { List } from 'antd';
 
-interface Prop {
+type Prop = {
   children?: React.ReactNode;
-}
+};
 
-const ListItem = (props: Prop) => {
+const ListItem: React.FC<Prop> = (props) => {
   const { children, ...others } = props;
   return <List.Item {...others}>{children}</List.Item>;
 };

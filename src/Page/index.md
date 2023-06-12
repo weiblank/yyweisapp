@@ -1,15 +1,22 @@
+<!--
+ * @Author: weiyayun
+ * @Date: 2023-02-21 19:37:42
+ * @Interface:
+ * @Description:
+-->
+
 # Page
 
 ```tsx
 import React from 'react';
-import { Page } from 'yyweisapp';
+import { Page, Input } from 'yyweisapp';
 
 const App: React.FC = () => {
   return (
     <Page>
-      <Page.Header>Header</Page.Header>
-      <Page.Content>Content</Page.Content>
-      <Page.Footer>Footer</Page.Footer>
+      <Page.Header style={{ backgroundColor: '#f2f5fa' }}>Header</Page.Header>
+      <Page.Content style={{ backgroundColor: 'pink' }}></Page.Content>
+      <Page.Footer style={{ backgroundColor: 'green' }}>Footer</Page.Footer>
     </Page>
   );
 };

@@ -1,9 +1,9 @@
-import React from "react";
-import {Tree} from 'antd'
+import React from 'react';
+import { Tree } from 'antd';
 interface TableProps {
-  [props: string]: any
+  [props: string]: any;
 }
-const YTree = (props: TableProps) => {
-  return <Tree {...props} />
-}
-export default YTree
+const YTree: React.FC<TableProps> = (props) => {
+  return <Tree {...props} />;
+};
+export default YTree;
